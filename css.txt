@@ -1,0 +1,179 @@
+/* гарнитура */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,400&family=DM+Serif+Display&display=swap");
+/* внешний вид текста */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: DM Sans, sans-serif;
+}
+/* внешний вид текста */
+body {
+  display: grid;
+  display: grid;
+  grid-columns: (1fr) [12];
+  grid-template-columns: repeat(12, 1fr);
+  max-height: 100vh;
+  background-color: #141414;
+  position: relative;
+  grid-rows: (1fr) [12];
+  grid-template-rows: repeat(12, 1fr);
+  overflow: hidden;
+}
+/* расположение меню */
+.menu {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+/* расположение иллюстрации */
+.hero {
+  grid-column: 6;
+  grid-column-span: 5;
+  grid-column: 6 / span 5;
+  grid-row: 1 / -1;
+  background: url("https://i.pinimg.com/originals/c4/80/bf/c480bf0f55ea997054723a6d4916f256.jpg")
+    no-repeat 50% 50% / cover;
+}
+/* расположение иллюстрации */
+.small1 {
+  grid-column: 1;
+  grid-column-span: 2;
+  grid-column: 1 / 3;
+  grid-row: 10;
+ grid-row-span: 3;
+  grid-row: 10 / 13;
+  background: url("https://chpic.su/_data/stickers/d/dkdurak/dkdurak_010.webp")
+    no-repeat 50% 50% / cover;
+}
+/* расположение иллюстрации */
+.small2 {
+  grid-column: 4;
+ grid-column-span: 2;
+  grid-column: 4 / 6;
+  grid-row: 1;
+  grid-row-span: 3;
+  grid-row: 1 / 4;
+  background: url("https://chpic.su/_data/stickers/d/dkdurak/dkdurak_001.webp")
+    no-repeat 50% 50% / cover;
+}
+/* расположение иллюстрации */
+.small3 {
+  grid-column: 11;
+  grid-column-span: 2;
+  grid-column: 11 / 13;
+  grid-row: 10;
+  grid-row-span: 3;
+  grid-row: 10 / 13;
+  background: url("https://chpic.su/_data/stickers/d/dkdurak/dkdurak_022.webp")
+    no-repeat 50% 50% / cover;
+}
+/* внешний вид основного текста */
+.content {
+  margin-top: 2rem;
+ grid-column: 3;
+ grid-column-span: 3;
+  grid-column: 3 / 6;
+ grid-row: 4;
+ grid-row-span: 2;
+  grid-row: 4 / 6;
+  color: #fff;
+  text-align: right;
+  margin-right: 1rem;
+  font-weight: 400;
+}
+/* расположение главного заголовка */
+.content p {
+  margin-top: 0.6rem;
+}
+/* внешний вид главного заголовка */
+.header {
+ grid-column: 4;
+  grid-column-span: 6;
+  grid-column: 4 / 10;
+ grid-row: 8;
+  grid-row-span: 2;
+  grid-row: 10 / 10;
+  font-family: DM Serif Display, serif;
+  font-size: 6rem;
+  color: #fff;
+}
+/* расположение текста со стрелочкой */
+.readmore {
+  grid-column: 12;
+  grid-column-span: 1;
+  grid-column: 12 / 13;
+  grid-row: -9 / -6;
+}
+/* расположение текста со стрелочкой */
+.readmore img {
+  height: 8.75rem;
+  width: auto;
+}
+/* расположение соц. сетей */
+.social {
+  display: box;
+  display: flexbox;
+  display: flex;
+  margin-left: 1.875rem;
+  position: absolute;
+  box-orient: vertical;
+  box-direction: normal;
+  flex-direction: column;
+  flex-direction: column;
+  justify-self: space-around;
+ grid-column: 1;
+  grid-column-span: 1;
+  grid-column: 1 / 2;
+  grid-row: 3;
+  grid-row-span: 6;
+  grid-row: 3 / 9;
+}
+/* внешний вид соц. сетей */
+.social img {
+  display: block;
+  margin-top: 2rem;
+}
+/* размер текста */
+@media (max-width: 1047px) {
+  .header {
+    font-size: 5rem;
+  }
+  .content p {
+    font-size: 0.8rem;
+  }
+  .social img {
+    height: 80px;
+    width: auto;
+  }
+  .social img:last-child {
+    height: 60px;
+  }
+}
+/* размер иллюстраций */
+@media (max-width: 930px) {
+  .small1,
+  .small3 {
+    grid-row: 11;
+    grid-row-span: 2;
+    grid-row: 11 / 13;
+  }
+  .small2 {
+   grid-row: 1;
+    grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+  
+  .header {
+    grid-column: 4;
+    grid-column-span: 8;
+    grid-column: 4 / 12;
+  }
+  
+  .menu {
+    transform: scale(0.9);
+    transform: scale(0.9);
+  }
